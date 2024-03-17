@@ -12,7 +12,7 @@
             Good Morning Oguz
           </div>
           <div class="font-sans text-xs lg:text-sm font-medium text-gray-400">
-            Here are your stats for Today,24 Aug 2020
+            Here are your stats for Today,17 Mar 2024
           </div>
         </div>
       </div>
@@ -53,13 +53,13 @@
           $32,621.72
         </div>
         <div
-          class="text-xs xl:text-sm text-center lg:text-start font-medium font-sans text-gray-400"
+          class="text-xs xl:text-sm text-center lg:text-start font-medium font-sans text-gray-400 border-b-2 border-gray-200 md:border-0 pb-1 md:pb-0"
         >
           433 Orders
         </div>
       </div>
 
-      <div class="flex flex-col md:border-l-2 md:border-gray-20 py-1 px-3">
+      <div class="flex flex-col md:border-l-2 md:border-gray-200 py-1 px-3">
         <div class="flex justify-center gap-1">
           <div class="font-medium text-sm xl:text-base text-gray-400">
             Subscribers
@@ -74,14 +74,14 @@
           484,205
         </div>
         <div
-          class="text-xs font-medium xl:text-sm text-center lg:text-start font-sans text-gray-400"
+          class="text-xs font-medium xl:text-sm text-center lg:text-start font-sans text-gray-400 border-b-2 border-gray-200 md:border-0 pb-1 md:pb-0"
         >
           $56 Average Order
         </div>
       </div>
 
       <div class="flex flex-col md:border-l-2 md: border-gray-200 px-3">
-        <div class="flex gap-1 justify-center">
+        <div class="flex justify-center lg:justify-start gap-1">
           <div class="font-medium text-sm xl:text-base text-gray-400">
             Conversations
           </div>
@@ -95,7 +95,7 @@
           552,553
         </div>
         <div
-          class="text-xs text-center xl:text-sm lg:text-start font-sans font-medium text-gray-400"
+          class="text-xs text-center xl:text-sm lg:text-start font-sans font-medium text-gray-400 border-b-2 border-gray-200 md:border-0 pb-1 md:pb-0"
         >
           5min Average Response Time
         </div>
@@ -116,7 +116,7 @@
           25%
         </div>
         <div
-          class="text-xs xl:text-sm text-center lg:text-start font-sans font-medium text-gray-400"
+          class="text-xs xl:text-sm text-center lg:text-start font-sans font-medium text-gray-400 border-b-2 border-gray-200 md:border-0 pb-1 md:pb-0"
         >
           5% Sales Conversation Rate
         </div>
@@ -335,7 +335,6 @@ export default {
     renderChart() {
       const ctx = document.getElementById("orderChart").getContext("2d");
       // Chart.defaults.adapters.date = moment;
-     
 
       const orderChart = new Chart(ctx, {
         type: "line",
@@ -426,7 +425,6 @@ export default {
             legend: {
               display: false,
             },
-        
           },
           scales: {
             x: {
